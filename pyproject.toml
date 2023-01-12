@@ -9,6 +9,7 @@ packages = [{include = "data_visualization"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 matplotlib = "^3.6.3"
+flake8 = "^6.0.0"
 
 
 [build-system]
