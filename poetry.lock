@@ -28,7 +28,7 @@ python-versions = ">=3.6"
 name = "flake8"
 version = "6.0.0"
 description = "the modular source code checker: pep8 pyflakes and co"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.8.1"
 
@@ -91,7 +91,7 @@ setuptools_scm = ">=7"
 name = "mccabe"
 version = "0.7.0"
 description = "McCabe checker, plugin for flake8"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -127,7 +127,7 @@ tests = ["check-manifest", "coverage", "defusedxml", "markdown2", "olefile", "pa
 name = "pycodestyle"
 version = "2.10.0"
 description = "Python style guide checker"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -135,7 +135,7 @@ python-versions = ">=3.6"
 name = "pyflakes"
 version = "3.0.1"
 description = "passive checker of Python programs"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -219,7 +219,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "de2d2ac5ab4bd0ae3f929ea6bb036cc853ea5f22a55342ec6fe36a8dacfad6da"
+content-hash = "97d3a09444d245ce9d1f164092df9005b0a7aead938c32e0dc2935a97d46ddc7"
 
 [metadata.files]
 contourpy = [
