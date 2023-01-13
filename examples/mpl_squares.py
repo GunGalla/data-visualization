@@ -2,9 +2,10 @@
 """Square visualization."""
 import matplotlib.pyplot as plt
 
+input_values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 squares = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144]
 fig, ax = plt.subplots()
-ax.plot(squares, linewidth=3)
+ax.plot(input_values, squares, linewidth=3)
 
 # Diagram and axis titles
 ax.set_title("Square Numbers", fontsize=24)
