@@ -6,7 +6,7 @@ y_values = [x**2 for x in x_values]
 
 plt.style.use('seaborn-v0_8-darkgrid')
 fig, ax = plt.subplots()
-ax.scatter(x_values, y_values, c='green', s=10)
+ax.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Greens, s=10)
 
 # Diagram and axis titles
 ax.set_title("Square Numbers", fontsize=24)
