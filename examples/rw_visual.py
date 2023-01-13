@@ -10,10 +10,10 @@ while True:
 
     # Set points on diagram
     plt.style.use('seaborn-v0_8-darkgrid')
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(15, 9))
     point_numbers = range(rw.num_points)
     ax.scatter(rw.x_values, rw.y_values, c=point_numbers,
-               cmap=plt.cm.Greens, edgecolors='none', s=10)
+               cmap=plt.cm.Greens, edgecolors='none', s=1)
 
     # Enlight first and final point
     ax.scatter(0, 0, c='red', edgecolors='none', s=100)
