@@ -4,15 +4,17 @@ version = "0.1.0"
 description = ""
 authors = ["Iaroslav <GunGalla@gmail.com>"]
 readme = "README.md"
-packages = [{include = "data_visualization"}]
+packages = [{include = "examples"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 matplotlib = "^3.6.3"
 
-
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"
+
+[tool.poetry.scripts]
+squares = "examples.mpl_squares:main"
 
 [build-system]
 requires = ["poetry-core"]
