@@ -11,7 +11,9 @@ while True:
     # Set points on diagram
     plt.style.use('seaborn-v0_8-darkgrid')
     fig, ax = plt.subplots()
-    ax.scatter(rw.x_values, rw.y_values, s=10)
+    point_numbers = range(rw.num_points)
+    ax.scatter(rw.x_values, rw.y_values, c=point_numbers,
+               cmap=plt.cm.Greens, edgecolors='none', s=10)
     plt.show()
 
     keep_running = input("Make another walk? (y/n): ")
