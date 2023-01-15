@@ -4,13 +4,13 @@ from plotly import offline
 
 from dice import Dice
 
-# Create D6 dice
+# Create D6 and D10 dices
 dice_1 = Dice()
-dice_2 = Dice()
+dice_2 = Dice(10)
 
 # Generating throw rows
 results = []
-for roll_num in range(5000):
+for roll_num in range(50000):
     result = dice_1.roll() + dice_2.roll()
     results.append(result)
 
@@ -26,6 +26,6 @@ data = [Bar(x=x_values, y=frequencies)]
 
 x_axis_config = {'title': 'Result', 'dtick': 1}
 y_axis_config = {'title': 'Frequency of Result'}
-my_layout = Layout(title='Results of rolling two D6 dices 5000 times',
+my_layout = Layout(title='Results of rolling a D6 and D10 dices 50000 times',
                    xaxis=x_axis_config, yaxis=y_axis_config)
-offline.plot({'data': data, 'layout': my_layout}, filename='double_d6.html')
+offline.plot({'data': data, 'layout': my_layout}, filename='d6_d10.html')
