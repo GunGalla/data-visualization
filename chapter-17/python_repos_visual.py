@@ -23,11 +23,25 @@ data = [{
     'type': 'bar',
     'x': repo_names,
     'y': stars,
+    'marker': {
+        'color': 'green',
+        'line': {'width':1.5, 'color': 'grey'},
+    },
+    'opacity': 0.6,
 }]
 my_layout = {
     'title': 'Most-Starred Python projects on GitHub',
-    'xaxis': {'title': 'Repository'},
-    'yaxis': {'title': 'Stars'},
+    'titlefont': {'size': 28},
+    'xaxis': {
+        'title': 'Repository',
+        'titlefont': {'size': 24},
+        'tickfont': {'size': 14},
+    },
+    'yaxis': {
+        'title': 'Stars',
+        'titlefont': {'size': 24},
+        'tickfont': {'size': 14},
+    },
 }
 
 fig = {'data': data, 'layout': my_layout}
