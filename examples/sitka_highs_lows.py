@@ -22,8 +22,9 @@ with open(filename) as f:
 # Put data on diagram
 plt.style.use('seaborn-v0_8-dark-palette')
 fig, ax = plt.subplots()
-ax.plot(dates, highs, c='green')
-plt.plot(dates, lows, c='blue')
+ax.plot(dates, highs, c='green', alpha=0.5)
+ax.plot(dates, lows, c='blue', alpha=0.5)
+plt.fill_between(dates, highs, lows, facecolor='red', alpha=0.1)
 
 # Diagram formatting
 plt.title('Daily high and low temperatures, 2018', fontsize=24)
